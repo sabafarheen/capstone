@@ -31,4 +31,4 @@ app.get("/posts", (req, res) => {
     });
 });
 
-app.listen(PORT, console.log(`Server running at http://localhost:${PORT}`));
+app.listen(PORT, console.log(`🚀 Server running at http://localhost:${PORT}`));
