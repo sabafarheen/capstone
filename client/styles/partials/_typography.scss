@@ -1,0 +1,23 @@
+@use "./variables" as *;
+
+@font-face {
+  font-family: "Titillium Web";
+  src: url("../../src/assets/fonts/Titillium_web/TitilliumWeb-SemiBold.ttf")
+      format("truetype"),
+    url("../../src/assets/fonts/transfonter.org-semi-bold/TitilliumWeb-SemiBold.woff")
+      format("woff"),
+    url("../../src/assets/fonts/transfonter.org-semi-bold/TitilliumWeb-SemiBold.woff2")
+      format("woff2");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Titillium Web";
+  src: url("../../src/assets/fonts/Titillium_web/TitilliumWeb-Regular.ttf")
+      format("truetype"),
+    url("../../src/assets/fonts/transfonter.org-regular/TitilliumWeb-Regular.woff")
+      format("woff"),
+    url("../../src/assets/fonts/transfonter.org-regular/TitilliumWeb-Regular.woff2")
+      format("woff2");
+  font-weight: 400;
+}
