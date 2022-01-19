@@ -4,17 +4,32 @@ import axios from "axios";
 class ResourcePage extends Component {
   state = {
     resourceList: [],
+    grade: null,
+    showModal: false,
+    subject: null,
     selectedResource: null,
   };
 
+  showModal = (subject, grade) => {
+    this.setState({
+      showModal: true,
+      subject,
+      grade,
+    });
+  };
+  hideModal = () => {
+    this.setState({ showModal: false });
+  };
   componentDidMount() {
     axios
-      .get("http://localhost:8080/resource")
+      .get(
+        `http://localhost:8080/resource/${this.state.subject}/${this.state.grade}`
+      )
       .then((result) => {
+        console.log(result.data);
         this.setState({
           resourceList: result.data,
         });
-        console.log(result.data);
       })
       .catch();
   }

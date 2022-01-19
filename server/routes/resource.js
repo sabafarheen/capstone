@@ -13,7 +13,7 @@ router.route("/:subject/:grade").get((req, res) => {
     })
     .catch((err) => {
       console.log(err);
-      res.status(500).send("Error getting users");
+      res.status(500).send("Error getting resources");
     });
 });
 

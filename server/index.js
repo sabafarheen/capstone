@@ -6,6 +6,7 @@ const PORT = process.env.PORT || 8080;
 const cors = require("cors");
 const resourceroute = require("./routes/resource");
 
+require("dotenv").config();
 // middleware to parse req.body
 app.use(express.json());
 app.use(
