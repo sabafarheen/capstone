@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
-// import Card from "./components/Card/Card";
+import CardListItem from "./components/CardListItem/CardListItem";
 import ResourcePage from "./pages/ResourcePage";
 
 class App extends Component {
@@ -10,8 +10,8 @@ class App extends Component {
         <BrowserRouter>
           <Switch>
             {/* <Route path="/" exact={true} component={} /> */}
-            <Route path="/resource" component={ResourcePage} />
-            {/* <Route path=" " component={ } /> */}
+            {/* <Route path="/" component={CardListItem} /> */}
+            <Route path="/resource " component={ResourcePage} />
             {/* <Route path=" " component={ } /> */}
             {/* <Route path=" " component={ } /> */}
           </Switch>

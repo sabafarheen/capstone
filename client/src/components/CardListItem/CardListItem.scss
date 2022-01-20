@@ -1,0 +1,39 @@
+// @use "../../style/partials/variables" as *;
+@use "../../../styles/partials/typography" as *;
+// @use "../../style/partials/mixins" as *;
+
+.card {
+  display: flex;
+  margin: 3rem;
+  width: 15rem;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 0.5rem;
+
+    &-image {
+      display: flex;
+      object-fit: cover;
+    }
+
+    &-info {
+      font-size: 2rem;
+      font-weight: bold;
+      width: 15rem;
+      padding: 1rem;
+      text-align: center;
+    }
+  }
+
+  &:hover {
+    transform: scale(1.1);
+    box-shadow: 5px 5px 8px 5px rgba(0, 0, 0, 0.25);
+  }
+
+  &--selected {
+    background-color: #ccddb7;
+  }
+}
