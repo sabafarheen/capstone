@@ -1,0 +1,14 @@
+.header {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-bottom: 1rem;
+
+  &__logo {
+    display: flex;
+    margin: 1.5rem;
+    margin-left: 4rem;
+    padding-left: 4rem;
+    width: 8rem;
+  }
+}
