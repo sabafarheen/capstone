@@ -1,20 +1,26 @@
 .grade {
   display: flex;
-  background-image: url("../../assets/images/form.png");
-  background-repeat: no-repeat;
-  background-position: center;
+  background-size: cover;
   justify-content: center;
-  width: 100vw;
-  height: 100vh;
+  background-color: teal;
+
   text-align: center;
 
   &__form {
     display: flex;
+    background-image: url("../../assets/images/form.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+    width: 40rem;
+    height: 50rem;
     flex-direction: column;
     justify-content: center;
 
     &-drop {
       display: flex;
+      justify-content: center;
       width: 20rem;
       height: 3rem;
       backdrop-filter: blur(10px);
@@ -28,16 +34,16 @@
 
     &-dropdown {
       display: flex;
-      width: 15rem;
+      width: 16rem;
       height: 2rem;
       border-radius: 0.5rem;
-      margin-bottom: 1rem;
+      margin-bottom: 2rem;
       font-size: 1rem;
       font-weight: bold;
     }
     &-button {
       display: flex;
-      width: 15rem;
+      width: 16rem;
       height: 2rem;
       justify-content: center;
       align-items: center;
@@ -45,7 +51,7 @@
       font-size: 1rem;
       font-weight: bold;
       text-align: center;
-      background: chocolate;
+      background: #008080;
       color: white;
     }
   }

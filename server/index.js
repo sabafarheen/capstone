@@ -9,6 +9,7 @@ const resourceroute = require("./routes/resource");
 require("dotenv").config();
 // middleware to parse req.body
 app.use(express.json());
+app.use("/", express.static("public"));
 app.use(
   cors({
     origin: process.env.CLIENT_URL,

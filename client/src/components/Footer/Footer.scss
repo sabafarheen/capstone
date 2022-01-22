@@ -1,12 +1,33 @@
+@use "../../../styles/partials/typography" as *;
+
 .footer {
-  position: fixed;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
   bottom: 0;
   width: 100%;
-  background-color: light-grey;
+  background-color: #fefefa;
   padding: 2.5rem 0;
 
+  &__logo {
+    display: flex;
+    justify-content: center;
+
+    &-normal {
+      padding: 1rem;
+      width: 3rem;
+    }
+    &-fb {
+      padding: 1rem;
+      width: 2rem;
+    }
+  }
+
   &__text {
-    color: white;
-    text-align: center;
+    display: flex;
+    color: #004d4d;
+    font-size: 1.2rem;
+    font-weight: bold;
+    justify-content: center;
   }
 }
