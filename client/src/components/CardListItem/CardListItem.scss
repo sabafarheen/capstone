@@ -7,6 +7,9 @@
   flex-wrap: wrap;
   margin: 3rem;
   width: 15rem;
+  flex-direction: row;
+  flex-basis: 0;
+
   &__container {
     display: flex;
     justify-content: center;
@@ -26,7 +29,7 @@
       font-size: 1.2rem;
       font-weight: bold;
       width: 15rem;
-      padding: 1rem;
+      padding: 0.5rem;
       text-align: center;
     }
   }
@@ -34,6 +37,7 @@
   &:hover {
     transform: scale(1.1);
     border-radius: 0.5rem;
+    opacity: 85%;
     box-shadow: 5px 5px 8px 5px rgba(0, 0, 0, 0.25);
   }
 

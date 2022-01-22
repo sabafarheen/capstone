@@ -6,8 +6,7 @@
   flex-direction: column;
   bottom: 0;
   width: 100%;
-  // background-color: #c1c6cb;
-  background-color: white;
+  background-color: #fefefa;
   padding: 2.5rem 0;
 
   &__logo {
@@ -20,13 +19,13 @@
     }
     &-fb {
       padding: 1rem;
-      width: 1.8rem;
+      width: 2rem;
     }
   }
 
   &__text {
     display: flex;
-    color: black;
+    color: #004d4d;
     font-size: 1.2rem;
     font-weight: bold;
     justify-content: center;
