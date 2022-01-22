@@ -10,8 +10,10 @@ class Login extends Component {
           onSubmit={this.submitHandler}
           method="post"
         >
-          <div className="">
-            <label htmlFor="email">Email</label>
+          <div className="login__form__container">
+            <label className="login__form__container-item" htmlFor="email">
+              Email
+            </label>
             <input
               type="text"
               placeholder="Enter Email"
@@ -19,19 +21,21 @@ class Login extends Component {
               required
             />
 
-            <label htmlFor="password">Password</label>
+            <label className="login__form__container-item" htmlFor="password">
+              Password
+            </label>
             <input
               type="password"
               placeholder="Enter Password"
               name="psw"
               required
             />
-            <button type="submit">Login</button>
-            <label>
-              <input type="checkbox" checked="checked" name="remember" />{" "}
-              Remember me
-            </label>
           </div>
+          <button type="submit">Login</button>
+          <label>
+            <input type="checkbox" checked="checked" name="remember" /> Remember
+            me
+          </label>
         </form>
       </div>
     );

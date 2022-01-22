@@ -6,6 +6,7 @@ import GradeForm from "./pages/GradeForm/GradeForm";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import Home from "./pages/Home/Home";
+import Login from "./pages/Login/Login";
 
 class App extends Component {
   render() {
@@ -15,7 +16,7 @@ class App extends Component {
           <Header />
           <Switch>
             <Route path="/" exact={true} component={Home} />
-            {/* <Route path="/" exact component={CardListItem} /> */}
+            <Route path="/login" exact component={Login} />
             <Route path="/grade" component={GradeForm} />
             <Route path="/resource" exact component={ResourcePage} />
             {/* <Route path=" " component={ } /> */}
