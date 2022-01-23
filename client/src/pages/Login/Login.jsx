@@ -50,29 +50,30 @@ class Login extends Component {
       <div className="login">
         <form className="login__form" onSubmit={this.submitHandler}>
           <div className="login__form__container">
-            <label className="login__form__container-item" htmlFor="email">
-              Email
-            </label>
+            <label htmlFor="email">Email </label>
             <input
               type="text"
+              className="login__form__container-item"
               placeholder="Enter Email"
               name="email"
               required
               onChange={this.emailHandler}
             />
-
-            <label className="login__form__container-item" htmlFor="password">
-              Password
-            </label>
+          </div>
+          <div className="login__form__container">
+            <label htmlFor="password">Password</label>
             <input
               type="password"
+              className="login__form__container-item"
               placeholder="Enter Password"
               name="psw"
               required
               onChange={this.passwordHandler}
             />
           </div>
-          <button type="submit">Login</button>
+          <button className="login__form__button" type="submit">
+            Login
+          </button>
           {this.state.error && this.state.error}
         </form>
       </div>
