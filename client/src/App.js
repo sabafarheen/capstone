@@ -9,6 +9,18 @@ import Home from "./pages/Home/Home";
 import Login from "./pages/Login/Login";
 
 class App extends Component {
+  state = {
+    token: null,
+  };
+  componentDidMount() {
+    const token = localStorage.getItem("token") || null;
+    this.setState({
+      token: token,
+    });
+  }
+  componentDidUpdate() {
+    console.log("Testing", this.state);
+  }
   render() {
     return (
       <>
@@ -18,7 +30,11 @@ class App extends Component {
             <Route path="/" exact={true} component={Home} />
             <Route path="/login" exact component={Login} />
             <Route path="/grade" component={GradeForm} />
-            <Route path="/resource" exact component={ResourcePage} />
+            <Route
+              path="/resource/:subject/:grade"
+              exact
+              component={ResourcePage}
+            />
             {/* <Route path=" " component={ } /> */}
           </Switch>
           <Footer />
