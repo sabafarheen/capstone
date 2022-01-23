@@ -71,10 +71,22 @@ class Login extends Component {
               onChange={this.passwordHandler}
             />
           </div>
-          <button className="login__form__button" type="submit">
-            Login
-          </button>
+          <div className="login__form__container">
+            <button className="login__form__container-button" type="submit">
+              Login
+            </button>
+          </div>
           {this.state.error && this.state.error}
+          <div className="login__form__container">
+            <button className="login__form__container-button1" type="submit">
+              Sign Up with Google
+            </button>
+          </div>
+          <div className="login__form__container">
+            <button className="login__form__container-button2" type="submit">
+              Sign Up with Facebook
+            </button>
+          </div>
         </form>
       </div>
     );
