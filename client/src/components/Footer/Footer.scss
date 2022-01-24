@@ -6,27 +6,24 @@
   flex-direction: column;
   bottom: 0;
   width: 100%;
-  background-color: #fefefa;
-  padding: 2.5rem 0;
+  height: 15vh;
+  background-color: #6863a9;
 
   &__logo {
     display: flex;
     justify-content: center;
 
-    &-normal {
-      padding: 1rem;
-      width: 3rem;
-    }
-    &-fb {
-      padding: 1rem;
-      width: 2rem;
+    &-icon {
+      padding-right: 2.5rem;
+      padding-bottom: 1rem;
+      width: 2.5rem;
     }
   }
 
   &__text {
     display: flex;
-    color: #004d4d;
-    font-size: 1.2rem;
+    color: #faf6ef;
+    font-size: 1.5rem;
     font-weight: bold;
     justify-content: center;
   }

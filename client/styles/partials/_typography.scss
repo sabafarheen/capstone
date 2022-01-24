@@ -21,3 +21,26 @@
       format("woff2");
   font-weight: 400;
 }
+
+@font-face {
+  font-family: "Milky Nice Clean";
+  src: url("../../src/assets/fonts/milky_nice/MilkyNice-Clean.ttf") format
+      ("truetype"),
+    url("../../src/assets/fonts/milky_nice/MilkyNice-Clean.otf")
+      format("opentype"),
+    url("../../src/assets/fonts/transfonter.org-milky_nice_clean/MilkyNiceClean.woff")
+      format("woff"),
+    url("../../src/assets/fonts/transfonter.org-milky_nice_clean/MilkyNiceClean.woff2")
+      fomat ("woff2");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Starborn";
+  src: url("../../src/assets/fonts/starborn/Starborn.ttf") format ("truetype"),
+    url("../../src/assets/fonts/transfonter.org-starborn/Starborn.woff")
+      format("woff"),
+    url("../../src/assets/fonts/transfonter.org-starborn/Starborn.woff2")
+      format("woff2");
+  font-weight: 600;
+}

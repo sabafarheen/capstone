@@ -6,8 +6,22 @@ import GradeForm from "./pages/GradeForm/GradeForm";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import Home from "./pages/Home/Home";
+import Login from "./pages/Login/Login";
+import Signup from "./pages/Signup/Signup";
 
 class App extends Component {
+  state = {
+    token: null,
+  };
+  componentDidMount() {
+    const token = localStorage.getItem("token") || null;
+    this.setState({
+      token: token,
+    });
+  }
+  componentDidUpdate() {
+    console.log("Testing", this.state);
+  }
   render() {
     return (
       <>
@@ -15,10 +29,14 @@ class App extends Component {
           <Header />
           <Switch>
             <Route path="/" exact={true} component={Home} />
-            {/* <Route path="/" exact component={CardListItem} /> */}
+            <Route path="/login" exact component={Login} />
             <Route path="/grade" component={GradeForm} />
-            <Route path="/resource" exact component={ResourcePage} />
-            {/* <Route path=" " component={ } /> */}
+            <Route
+              path="/resource/:subject/:grade"
+              exact
+              component={ResourcePage}
+            />
+            <Route path="/signup" exact component={Signup} />
           </Switch>
           <Footer />
         </BrowserRouter>
