@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Starborn';
+    src: url('Starborn.woff2') format('woff2'),
+        url('Starborn.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

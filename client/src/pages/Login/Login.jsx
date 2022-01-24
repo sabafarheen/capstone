@@ -2,6 +2,7 @@ import axios from "axios";
 import React, { Component } from "react";
 import "./Login.scss";
 import { GoogleLogin } from "react-google-login";
+import { Link } from "react-router-dom";
 
 class Login extends Component {
   state = {
@@ -110,18 +111,21 @@ class Login extends Component {
               Sign 
             </button> */}
             <GoogleLogin
+              className="login__form__container-button1"
               clientId="804959678881-sh5r0bvammsuj6bouoa8hfaoga7nhp4f.apps.googleusercontent.com"
               buttonText="Signin with"
               onSuccess={this.successResponseGoogle}
               onFailure={this.failureResponseGoogle}
               cookiePolicy={"single_host_origin"}
             />
-            ,
           </div>
+
           <div className="login__form__container">
-            <button className="login__form__container-button2" type="submit">
-              Sign Up with Facebook
-            </button>
+            <Link to="/signup">
+              <button className="login__form__container-button2" type="submit">
+                Or Register to Login →
+              </button>
+            </Link>
           </div>
         </form>
       </div>

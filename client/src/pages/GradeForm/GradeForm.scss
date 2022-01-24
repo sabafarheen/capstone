@@ -1,3 +1,5 @@
+@use "../../../styles/partials/typography" as *;
+
 .grade {
   display: flex;
   background-size: cover;
@@ -6,57 +8,64 @@
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
-  height: 50rem;
+  height: 70vh;
 
   &__form {
     display: flex;
-    margin-top: 10rem;
+    margin-top: 3rem;
     // background-image: url("../../assets/images/form.png");
     // background-repeat: no-repeat;
     // background-position: center;
-    background-color: #f3cd45;
+    background-color: #6863a9;
     justify-content: center;
     align-items: center;
-    width: 20rem;
-    height: 20rem;
+    width: 40rem;
+    height: 60vh;
     flex-direction: column;
     justify-content: center;
 
     &-drop {
       display: flex;
       justify-content: center;
-      width: 20rem;
-      height: 3rem;
-      backdrop-filter: blur(10px);
+      width: 40rem;
+      height: 2.5rem;
       border-radius: 10px;
-      font-size: 2rem;
+      font-size: 3rem;
       font-weight: bold;
       text-align: center;
-      color: white;
-      margin-bottom: 2rem;
+      color: #f3cd45;
+      margin-bottom: 4rem;
     }
 
     &-dropdown {
       display: flex;
-      width: 16rem;
-      height: 2rem;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      width: 22rem;
+      height: 4rem;
       border-radius: 0.5rem;
-      margin-bottom: 2rem;
-      font-size: 1rem;
+      margin: 1rem;
+      font-size: 1.1rem;
       font-weight: bold;
+      padding: 1.3rem;
+      color: #875028;
     }
     &-button {
       display: flex;
-      width: 16rem;
-      height: 2rem;
+      width: 18rem;
+      height: 3rem;
       justify-content: center;
+      margin-top: 5rem;
       align-items: center;
-      border-radius: 0.5rem;
-      font-size: 1rem;
+      border-radius: 1.5rem;
+      font-size: 1.5rem;
       font-weight: bold;
       text-align: center;
-      background: #008080;
-      color: white;
+      background: #f3cd45;
+      color: #6863a9;
+      border: none;
     }
   }
 }

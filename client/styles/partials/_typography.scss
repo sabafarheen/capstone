@@ -34,3 +34,13 @@
       fomat ("woff2");
   font-weight: 400;
 }
+
+@font-face {
+  font-family: "Starborn";
+  src: url("../../src/assets/fonts/starborn/Starborn.ttf") format ("truetype"),
+    url("../../src/assets/fonts/transfonter.org-starborn/Starborn.woff")
+      format("woff"),
+    url("../../src/assets/fonts/transfonter.org-starborn/Starborn.woff2")
+      format("woff2");
+  font-weight: 600;
+}

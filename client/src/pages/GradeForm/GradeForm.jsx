@@ -43,7 +43,7 @@ class GradeForm extends Component {
       <div className="grade">
         <form className="grade__form" onSubmit={this.submitHandler}>
           <label className="grade__form-drop" htmlFor="grade">
-            Grade & Subject{" "}
+            Let's get to know you!{" "}
           </label>
           <select
             className="grade__form-dropdown"
@@ -52,7 +52,7 @@ class GradeForm extends Component {
             onChange={this.gradeHandler}
           >
             <option className="grade__form-dropdown" value="grade">
-              Choose a grade.........
+              What grade are you in?
             </option>
             <option className="grade__form-dropdown" value="KG">
               Grade K.G.
@@ -87,7 +87,7 @@ class GradeForm extends Component {
             onChange={this.subjectHandler}
           >
             <option className="grade__form-dropdown" value="subject">
-              Choose a subject.........
+              What do you want to learn?
             </option>
             <option className="grade__form-dropdown" value="english">
               English
