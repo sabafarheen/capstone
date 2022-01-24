@@ -7,6 +7,7 @@ import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import Home from "./pages/Home/Home";
 import Login from "./pages/Login/Login";
+import Signup from "./pages/Signup/Signup";
 
 class App extends Component {
   state = {
@@ -35,7 +36,7 @@ class App extends Component {
               exact
               component={ResourcePage}
             />
-            {/* <Route path=" " component={ } /> */}
+            <Route path="/signup" exact component={Signup} />
           </Switch>
           <Footer />
         </BrowserRouter>

@@ -20,7 +20,7 @@ class GradeForm extends Component {
 
   submitHandler = (e) => {
     e.preventDefault();
-    console.log("Value...", this.state);
+    if (!this.state.grade || !this.state.subject) return;
     this.props.history.push(
       `/resource/${this.state.subject}/${this.state.grade}`
     );

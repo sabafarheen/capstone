@@ -9,9 +9,12 @@ const Header = () => {
   console.log(token);
   useEffect(() => {
     const login_token = localStorage.getItem("token") || null;
+
+    console.log("Login Token", login_token);
     setToken(login_token);
   }, [token]);
   const logOutHandler = () => {
+    setToken(null);
     localStorage.clear();
     history.push("/login");
   };
@@ -22,11 +25,11 @@ const Header = () => {
         <li className="header__nav-link">HOME</li>
         <li className="header__nav-link">ABOUT</li>
         <li className="header__nav-link">CONTACT US</li>
-        {token && (
-          <li className="header__nav-link" onClick={logOutHandler}>
-            LOGOUT
-          </li>
-        )}
+        {/* {token && ( */}
+        <li className="header__nav-link" onClick={logOutHandler}>
+          LOGOUT
+        </li>
+        {/* )} */}
       </ul>
     </header>
   );

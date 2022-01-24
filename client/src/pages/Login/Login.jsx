@@ -1,6 +1,7 @@
 import axios from "axios";
 import React, { Component } from "react";
 import "./Login.scss";
+import { GoogleLogin } from "react-google-login";
 
 class Login extends Component {
   state = {
@@ -17,6 +18,33 @@ class Login extends Component {
     this.setState({
       password: e.target.value,
     });
+  };
+  successResponseGoogle = (result) => {
+    console.log(result);
+    const payload = {
+      email: result.profileObj.email,
+      name: result.profileObj.name,
+    };
+    axios
+      .post("http://localhost:8080/users/social-login", payload)
+      .then((result) => {
+        console.log(result);
+        if (result.status === 200) {
+          localStorage.setItem("token", result.data.token);
+          localStorage.setItem("name", result.data.name);
+          localStorage.setItem("email", result.data.email);
+          this.props.history.push("/grade");
+        }
+      })
+      .catch((err) => {
+        this.setState({
+          error: err.response.data.error,
+        });
+      });
+  };
+
+  failureResponseGoogle = (result) => {
+    console.log(result);
   };
   submitHandler = (e) => {
     e.preventDefault();
@@ -78,9 +106,17 @@ class Login extends Component {
           </div>
           {this.state.error && this.state.error}
           <div className="login__form__container">
-            <button className="login__form__container-button1" type="submit">
-              Sign Up with Google
-            </button>
+            {/* <button className="login__form__container-button1" type="submit">
+              Sign 
+            </button> */}
+            <GoogleLogin
+              clientId="804959678881-sh5r0bvammsuj6bouoa8hfaoga7nhp4f.apps.googleusercontent.com"
+              buttonText="Signin with"
+              onSuccess={this.successResponseGoogle}
+              onFailure={this.failureResponseGoogle}
+              cookiePolicy={"single_host_origin"}
+            />
+            ,
           </div>
           <div className="login__form__container">
             <button className="login__form__container-button2" type="submit">
