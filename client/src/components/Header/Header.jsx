@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useHistory } from "react-router-dom";
-import Logo from "../../assets/images/logo2.png";
+import Logo from "../../assets/images/logo.svg";
 import "./Header.scss";
 
 const Header = () => {
@@ -20,14 +20,14 @@ const Header = () => {
   };
   return (
     <header className="header">
-      <img className="header__logo" src={Logo} alt="G4Kids logo" />
+      <img className="header__logo" src={Logo} alt="Gi4Kids logo" />
       <ul className="header__nav">
-        <li className="header__nav-link">HOME</li>
-        <li className="header__nav-link">ABOUT</li>
-        <li className="header__nav-link">CONTACT US</li>
+        <li className="header__nav-link">Home</li>
+        <li className="header__nav-link">Resource</li>
+
         {/* {token && ( */}
-        <li className="header__nav-link" onClick={logOutHandler}>
-          LOGOUT
+        <li className="header__nav-link-color" onClick={logOutHandler}>
+          Logout
         </li>
         {/* )} */}
       </ul>

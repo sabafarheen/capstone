@@ -11,18 +11,21 @@
   background-position: center;
   width: 100vw;
   height: 100vh;
+  font-family: "Milky Nice Clean";
+  text-decoration: none;
 
   &__button {
     display: flex;
     background-color: white;
-    color: #004d4d;
+    color: #a777ab;
     align-items: center;
+    font-family: "Milky Nice Clean";
     justify-content: center;
     width: 18rem;
     height: 3rem;
     margin-left: 4rem;
     margin-top: 15rem;
-    font-size: 2rem;
+    // font-size: 2rem;
     font-weight: bold;
     border-radius: 1.5rem;
   }
