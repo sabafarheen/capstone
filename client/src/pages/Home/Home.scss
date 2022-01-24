@@ -2,7 +2,7 @@
 
 .home {
   display: flex;
-  background-image: url("../../assets/images/home.png");
+  background-image: url("../../assets/images/Home.svg");
   background-repeat: no-repeat;
   background-size: cover;
   justify-content: center;
@@ -10,23 +10,26 @@
   align-items: center;
   background-position: center;
   width: 100vw;
-  height: 100vh;
+  height: 70vh;
   font-family: "Milky Nice Clean";
-  text-decoration: none;
+
+  a {
+    text-decoration: none;
+  }
 
   &__button {
     display: flex;
-    background-color: white;
-    color: #a777ab;
+    background-color: #6863a9;
+    color: #faf6ef;
     align-items: center;
-    font-family: "Milky Nice Clean";
     justify-content: center;
     width: 18rem;
     height: 3rem;
-    margin-left: 4rem;
+    margin-left: 25rem;
     margin-top: 15rem;
-    // font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: bold;
+    border: none;
     border-radius: 1.5rem;
   }
 }
