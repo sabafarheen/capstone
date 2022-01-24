@@ -29,8 +29,8 @@ class App extends Component {
           <Header />
           <Switch>
             <Route path="/" exact={true} component={Home} />
-            <Route path="/login" exact component={Login} />
-            <Route path="/grade" component={GradeForm} />
+            {/* <Route path="/login" exact component={Login} /> */}
+            {/* <Route path="/grade" component={GradeForm} /> */}
             <Route
               path="/resource/:subject/:grade"
               exact
