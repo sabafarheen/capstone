@@ -58,7 +58,6 @@ class Signup extends Component {
   render() {
     return (
       <div className="signup">
-        <h1>Sign Up</h1>
         <form className="signup__form" onSubmit={this.submitHandler}>
           <div className="signup__form__container">
             <label htmlFor="name"> Name </label>
