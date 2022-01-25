@@ -17,8 +17,8 @@ class App extends Component {
     super(props);
     this.getIsLogin = this.getIsLogin.bind(this);
   }
-  getIsLogin(value) {
-    this.setState({ isLogin: value });
+  getIsLogin(event) {
+    this.setState({ isLogin: event });
   }
   componentDidMount() {
     const token = localStorage.getItem("token") || null;

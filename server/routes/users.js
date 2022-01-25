@@ -11,7 +11,6 @@ router.post("/login", (request, response, next) => {
     .where({ email: request.body.email })
     .first()
     .then((user) => {
-      console.log("user......", { ...user });
       if (!user) {
         response.status(400).json({
           error: "Invalid email-id",
@@ -33,10 +32,6 @@ router.post("/login", (request, response, next) => {
                 name: user.name,
                 email: user.email,
               });
-              // return jwt.sign(user, SECRET, (error, token) => {
-              //   console.log("Token", token);
-              //   response.status(200).json({ token });
-              // });
             }
           });
       }

@@ -1,3 +1,10 @@
+# Capstone Project -----> Gi4Kids <---------
+
+This project called Gi4Kids has been built to showcase what I learnt in my Web Dev bootcamp.
+
+- It is a desktop website where parents, teacher and kids can get interesting study resources which kids enjoy doing.
+- All study materials were purchased from third party website and is not created by me.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
