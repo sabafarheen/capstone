@@ -34,6 +34,7 @@ class Login extends Component {
           localStorage.setItem("token", result.data.token);
           localStorage.setItem("name", result.data.name);
           localStorage.setItem("email", result.data.email);
+          this.props.getIsLogin(true);
           this.props.history.push("/grade");
         }
       })
@@ -58,7 +59,7 @@ class Login extends Component {
           localStorage.setItem("token", result.data.token);
           localStorage.setItem("name", result.data.name);
           localStorage.setItem("email", result.data.email);
-          this.props.setIsLogin({ isLogin: true });
+          this.props.getIsLogin(true);
           this.props.history.push("/grade");
         }
       })
