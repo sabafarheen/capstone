@@ -2,23 +2,28 @@
 
 This project called Gi4Kids has been built to showcase what I learnt in my Web Dev bootcamp.
 
-- It is a desktop website where parents, teacher and kids can get interesting study resources which kids enjoy doing.
-- All study materials were purchased from third party website and is not created by me.
+###### It is a desktop website where parents, teacher and kids can get interesting study resources which kids enjoy doing.
+
+###### All study materials were purchased from third party website and is not created by me.
 
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was bootstrapped with [Create React App]
+MySQL, Sass, Knex.js, React Router DOM, Google OAuth, JSON Web Token, Node.js and Bcrypt.
 
 ## Available Scripts
 
 In the project directory, you can run:
 
-### `npm start`
+### `cd server` and run `node index`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### `cd client` and run `npm start`
 
-The page will reload when you make changes.\
+Runs the app in the development mode.
+Open [http://localhost:8080] to run server
+Open [http://localhost:3000] to view it in your browser.
+
+<!-- The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
 ### `npm test`
@@ -74,4 +79,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 ### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify) --> -->
