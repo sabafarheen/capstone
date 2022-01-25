@@ -23,11 +23,15 @@ class GradeForm extends Component {
     });
   };
 
-  //Once Submit button is clicked history.push function moves us from current page to destination page
-
   submitHandler = (e) => {
     e.preventDefault();
+
+    //If both grade and subject is not selected then button will not be clicked and stay in the same page
+
     if (!this.state.grade || !this.state.subject) return;
+
+    //Once Submit button is clicked history.push function moves us from current page to destination page
+
     this.props.history.push(
       `/resource/${this.state.subject}/${this.state.grade}`
     );
