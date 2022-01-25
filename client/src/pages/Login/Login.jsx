@@ -34,12 +34,13 @@ class Login extends Component {
           localStorage.setItem("token", result.data.token);
           localStorage.setItem("name", result.data.name);
           localStorage.setItem("email", result.data.email);
+          this.props.getIsLogin(true);
           this.props.history.push("/grade");
         }
       })
       .catch((err) => {
         this.setState({
-          error: err.response.data.error,
+          error: err?.response?.data?.error,
         });
       });
   };
@@ -54,17 +55,17 @@ class Login extends Component {
     axios
       .post("http://localhost:8080/users/login", payload)
       .then((result) => {
-        console.log(result);
         if (result.status === 200) {
           localStorage.setItem("token", result.data.token);
           localStorage.setItem("name", result.data.name);
           localStorage.setItem("email", result.data.email);
+          this.props.getIsLogin(true);
           this.props.history.push("/grade");
         }
       })
       .catch((err) => {
         this.setState({
-          error: err.response.data.error,
+          error: err?.response?.data?.error,
         });
       });
   };
@@ -107,9 +108,6 @@ class Login extends Component {
           </div>
           {this.state.error && this.state.error}
           <div className="login__form__container">
-            {/* <button className="login__form__container-button1" type="submit">
-              Sign 
-            </button> */}
             <GoogleLogin
               className="login__form__container-button1"
               clientId="804959678881-sh5r0bvammsuj6bouoa8hfaoga7nhp4f.apps.googleusercontent.com"

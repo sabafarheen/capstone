@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
-import CardListItem from "./components/CardListItem/CardListItem";
 import ResourcePage from "./pages/ReourcePage/ResourcePage";
 import GradeForm from "./pages/GradeForm/GradeForm";
 import Header from "./components/Header/Header";
@@ -12,24 +11,39 @@ import Signup from "./pages/Signup/Signup";
 class App extends Component {
   state = {
     token: null,
+    isLogin: false,
   };
+  constructor(props) {
+    super(props);
+    this.getIsLogin = this.getIsLogin.bind(this);
+  }
+  getIsLogin(value) {
+    this.setState({ isLogin: value });
+  }
   componentDidMount() {
     const token = localStorage.getItem("token") || null;
     this.setState({
       token: token,
     });
+    if (token) {
+      this.setState({ isLogin: true });
+    }
   }
-  componentDidUpdate() {
-    console.log("Testing", this.state);
-  }
+
   render() {
     return (
       <>
         <BrowserRouter>
-          <Header />
+          <Header isLogin={this.state.isLogin} getIsLogin={this.getIsLogin} />
           <Switch>
             <Route path="/" exact={true} component={Home} />
-            <Route path="/login" exact component={Login} />
+            <Route
+              path="/login"
+              exact
+              render={(props) => (
+                <Login getIsLogin={this.getIsLogin} {...props} />
+              )}
+            />
             <Route path="/grade" component={GradeForm} />
             <Route
               path="/resource/:subject/:grade"

@@ -6,11 +6,16 @@ class GradeForm extends Component {
     subject: null,
     grade: null,
   };
+
+  //Receives the grade value what user chooses
+
   gradeHandler = (e) => {
     this.setState({
       grade: e.target.value,
     });
   };
+
+  //Receives the subject value what user chooses
 
   subjectHandler = (e) => {
     this.setState({
@@ -18,20 +23,18 @@ class GradeForm extends Component {
     });
   };
 
+  //Once Submit button is clicked history.push function moves us from current page to destination page
+
   submitHandler = (e) => {
     e.preventDefault();
     if (!this.state.grade || !this.state.subject) return;
     this.props.history.push(
       `/resource/${this.state.subject}/${this.state.grade}`
     );
-
-    /* 
-  Take the value of  e.target.grade.value
-  Push the page change (History.push("/resource"))
-
-  */
-    console.log("Handler");
   };
+
+  // Check user's token and if token is not same then asks to login
+
   componentDidMount() {
     const token = localStorage.getItem("token") || null;
     if (!token) {
