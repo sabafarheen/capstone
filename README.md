@@ -38,9 +38,13 @@ Storage: MySQL, Knex.JS
 ```
 
 #-----------------Run Locally----------------------
+
+```
 Runs the app in the development mode.
 Open [http://localhost:8080] to run server
 Open [http://localhost:3000] to view it in your browser.
+
+```
 
 ##Author
 [@sabafarheen](https://www.github.com/sabafarheen)
