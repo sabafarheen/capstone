@@ -46,6 +46,17 @@ Open [http://localhost:3000] to view it in your browser.
 
 ```
 
+```
+# Lesson Learned
+This project gave me a lot of confidence to build a website all my own and search for information where I got stuck.
+```
+
+```
+# Next Step
+I would like to include resources for all the grades.
+
+```
+
 ##Author
 [@sabafarheen](https://www.github.com/sabafarheen)
 
