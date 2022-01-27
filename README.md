@@ -2,12 +2,12 @@
 
 This project called Gi4Kids has been built to showcase what I learnt in my Web Dev bootcamp.
 
-###### It is a desktop website where parents, teacher and kids can get interesting study resources which kids enjoy doing.
+```
+It is a desktop website where parents, teacher and kids can get interesting study resources which kids enjoy doing.
 
-###### All study materials were purchased from third party website and is not created by me.
+ All study materials were purchased from third party website and is not created by me.
 
-#Screen Shot
-Screen Shot 2022-01-26 at 2.45.47 PM
+```
 
 # Getting Started with Create React App
 
