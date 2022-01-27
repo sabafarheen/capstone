@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import axios from "axios";
 import CardList from "./../../components/CardList/CardList";
-import "./ResourcePage.scss";
 
 class ResourcePage extends Component {
   state = {
@@ -13,6 +12,7 @@ class ResourcePage extends Component {
   };
 
   componentDidMount() {
+    //Fetching data from the API and set in state
     axios
       .get(
         `http://localhost:8080/resource/${this.props.match.params.subject}/${this.props.match.params.grade}`
@@ -30,6 +30,7 @@ class ResourcePage extends Component {
   render() {
     return (
       <div>
+        {/* **********CardList Component**************** */}
         <CardList resourceList={this.state.resourceList} />
       </div>
     );

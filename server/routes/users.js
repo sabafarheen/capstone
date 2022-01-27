@@ -1,11 +1,13 @@
 const router = require("express").Router();
 const knexConfig = require("../knexfile");
 const knex = require("knex")(knexConfig);
+//Library for signing and verifying JWT tokens
 const jwt = require("jsonwebtoken");
 const SECRET = "I_need_this_study_materials";
 const bcrypt = require("bcrypt");
 
 router.post("/login", (request, response, next) => {
+  //Creating a new user with Knex
   knex
     .from("users")
     .where({ email: request.body.email })
@@ -16,6 +18,7 @@ router.post("/login", (request, response, next) => {
           error: "Invalid email-id",
         });
       } else {
+        //Comparing our raw password with encrypted password and return error if it doesnot matches
         return bcrypt
           .compare(request.body.password, user.password)
           .then((isAuthenticated) => {
