@@ -13,9 +13,9 @@ It is a desktop website where parents, teacher and kids can get interesting stud
 
 # Tech Stack
 
-Client: React.JS, Axios, Sass
-Server: Node.JS, Express, React Router DOM, Google OAuth, JSON Web Token and Bcrypt.
-Storage: MySQL, Knex.JS
+Markup: _ Client: React.JS, Axios, Sass
+Markup: _ Server: Node.JS, Express, React Router DOM, Google OAuth, JSON Web Token and Bcrypt.
+Markup: \* Storage: MySQL, Knex.JS
 
 ## Installation
 
