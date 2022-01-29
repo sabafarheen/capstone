@@ -16,7 +16,7 @@ const CardListItem = (props) => {
             <div>
               <img
                 className="card__container-image"
-                src={`http://localhost:8080/image/${grade}_${subject}/${img}`}
+                src={`/image/${grade}_${subject}/${img}`}
                 alt={img}
               />
               <div className="card__container-info"> {name}</div>
